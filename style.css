@@ -1,0 +1,314 @@
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 200px;
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+body, html{
+  background-color: #42496b !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x:hidden;
+  width: 100%;
+  text-align: center !important;
+}
+
+.header{
+	background-color:#42496b;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #8592dc;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.content {
+  width: 100% !important;
+  position: absolute !important;
+  top: 50% !important;
+  transform: translate(-7%, -50%) !important; 
+  text-align: center !important;
+  color: #ffffff;
+}
+
+.content h1 {
+  font-size: 70px !important;
+  margin-top: 80px !important;
+  text-align: center !important;
+}
+
+.content p {
+  margin: 20px auto !important;
+  font-weight: 100 !important;
+  line-height: 25px !important;
+  text-align: center !important;
+}
+
+button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px !important;
+  font-weight: bold;
+  border: 2px solid #8592dc;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+span {
+  background: #8592dc;
+  height: 100%;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+button:hover {
+  border: none;
+}
+
+.page {
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+        
+#page1 {
+	background-color: #42496b;
+	content-align: center !important;
+}
+
+#page2 {
+	background-color: #42496b;
+	color: #ffffff;
+}	
+
+#page3 {
+	background-color: #42496b;
+	color: #ffffff;
+}
+
+.custom-header{
+	font-size: 50px;
+	color: #ffffff;
+}
+
+.custom-paragraph{
+	color: #ffffff;
+}
+
+
+/*---------service---------*/
+
+.service{
+	margin: 0px 0px;
+}
+
+.title{
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 30px;
+	font-size: 50px;
+}
+
+.subtitle{
+	text-align: center;
+	margin-bottom: 70px;
+	font-size: 15px;
+}
+
+.service-box{
+	padding: 0 35px;
+	cursor: pointer;
+	margin-bottom: 10px;
+	transition: 0.4s;
+}
+
+.service-box img{
+	width: 200px;
+	margin-top: 65px;
+	margin-bottom: 45px;
+}
+
+.service-box h3{
+	margin-bottom: 40px;
+	font-weight: bold;
+}
+
+.service-box p{
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.service-box:hover{
+	background: #8592dc;
+	border-radius: 5px;
+	color: #ffffff !important;
+	box-shadow: 0 15px 15px 2px rgba(98,113,184,1)
+}
+
+
+/*-------payment-------*/
+
+.review{
+	margin: 100px 0;
+}
+
+.carousel-item img{
+	width: 150px;
+	border-radius: 20px;
+}
+
+.carousel-item{
+	text-align: center;
+	height: 430px;
+}
+
+.payment h1{
+	font-size: 50px !important;
+	font-weight: bold !important;
+	margin-bottom: 30px !important;
+	color: #ffffff !important;
+}
+
+.payment p{
+	margin-bottom: 55px;
+	font-size: 15px;
+	color: #ffffff;
+}
+
+.carousel-caption{
+	z=index: -1 !important;
+	box-shadow: 0 0 15px 1px rgba(98, 113, 184, 1);
+	border-radius: 5px;
+	margin-bottom: 50px;
+}
+
+.carousel-caption h6{
+	margin-top: 200px;
+	font-weight: bold;
+	font-size: 25px;
+	color: #ffffff;
+}
+
+.carousel-caption p{
+	text-align: center;
+	padding: 0 50px;
+	font-size: 15px;
+	color: #ffffff;
+}
+
+	
+/*--------us--------*/
+
+.us{
+	margin: 200px 0;
+}
+
+.us img {
+	width: 730px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.us h2{
+	margin-top: 100px;
+	font-weight: bold;
+	line-height: 50px;
+	color: #ffffff;
+}
+
+.us p{
+	margin-top: 25px;
+	margin-bottom: 50px;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+
+/*---------footer---------*/
+
+.footer{
+	background: #6271b8;
+	padding-top: 5px;
+}
+
+.footer h3{
+	color: #ffffff;
+	font-weight: 600;
+	margin: 70px 0;
+}
+
+.footer button{
+	padding: 6px;
+	width: 180px;
+	margin: auto;
+	display: block;
+	color: #ffffff;
+	border: 1px solid #8592dc;
+	font-size: 20px;
+	background: transparent;
+}
+
+.footer small{
+	color: #ffffff;
+}
+
+.footer input{
+	width: 60%;
+	background: transparent;
+	outline: none;
+	border: 0;
+	border-bottom: 1px solid #ffffff;
+	padding: 10px;
+	margin-bottom: 30px;
+	color: #ffffff;
+}
+
+::placeholder{
+	color: #ffffff;
+}
